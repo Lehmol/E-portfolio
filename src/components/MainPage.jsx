@@ -32,7 +32,7 @@ function MainPage() {
         <ul className="flex space-x-10 text-sm font-medium">
           <li>
             <a href="#about" className="hover:underline">
-              About me
+              About
             </a>
           </li>
           <li>
@@ -134,12 +134,17 @@ function MainPage() {
                 <a
                   className="hover:underline"
                   href="https://www.linkedin.com/in/linn%C3%A9a-lehmann-molander-554160328/"
+                  target="_blank"
                 >
                   LinkedIn
                 </a>
               </li>
               <li>
-                <a className="hover:underline" href="https://github.com/Lehmol">
+                <a
+                  className="hover:underline"
+                  href="https://github.com/Lehmol"
+                  target="_blank"
+                >
                   Github
                 </a>
               </li>
@@ -153,9 +158,16 @@ function MainPage() {
               </li>
             </ul>
           </div>
-          <button className="m-4 bg-green-400 rounded h-10 w-40 shadow hover:bg-green-500">
-            Download CV(PDF)
-          </button>
+          <a href="/lehmann-molander-cv.pdf" download>
+            <button className="m-4 bg-green-400 rounded h-10 w-40 shadow hover:bg-green-500">
+              CV (PDF)
+            </button>
+          </a>
+          <a href="/lehmann-molander-pb.pdf" download>
+            <button className="m-4 bg-green-400 rounded h-10 w-40 shadow hover:bg-green-500">
+              Personal letter (PDF)
+            </button>
+          </a>
         </section>
       </main>
       <footer className="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
