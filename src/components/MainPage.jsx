@@ -1,23 +1,22 @@
-import React from "react";
 import Card from "./Card";
 import "/src/index.css";
 
 function MainPage() {
   const projects = [
     {
-      image: "./src/svgs/foodapp.png",
+      image: "/foodapp.png",
       description: "Food App built with React and Vite",
       liveLink: "https://foodappbylinnea.netlify.app/",
       codeLink: "https://github.com/Lehmol/FoodApp",
     },
     {
-      image: "./src/svgs/christmasquiz.png",
+      image: "/christmasquiz.png",
       description: "Christmas quiz built in vanilla Javascript",
       liveLink: "https://christmas-triviaa.netlify.app/",
       codeLink: "https://github.com/Lehmol/Christmas-quiz",
     },
     {
-      image: "./src/svgs/weatherapp.png",
+      image: "/weatherapp.png",
       description:
         "The first application i've ever built. Weather application built with vanilla Javascript.",
       liveLink: "https://weatherappbylinnea.netlify.app/",
@@ -93,7 +92,7 @@ function MainPage() {
                 ].map((src, index) => (
                   <li key={index} className="w-20 h-20">
                     <img
-                      src={`./src/svgs/${src}`}
+                      src={`/${src}`}
                       alt="Skill icon"
                       className="w-full h-full object-contain transition-transform duration-300 ease-in-out hover:scale-110"
                     />
